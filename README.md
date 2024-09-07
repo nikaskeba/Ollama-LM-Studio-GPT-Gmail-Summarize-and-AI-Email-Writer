@@ -36,6 +36,10 @@ This Flask-based web application allows users to fetch emails, summarize their c
 - **LLM Response Generation**: AI-powered responses are generated when replying to emails.
 - **Send Email**: Send replies or new emails via Gmail's SMTP service.
 
+## Current LLM Setup
+
+The code is currently set up using **LM Studio** with **LLama 3.1**, which is integrated into the application to handle email summarization and response generation. LM Studio provides the LLM infrastructure, allowing the app to interact seamlessly with the model. You can find the repository for this setup [here on GitHub](https://github.com/your-repo/email-flask-app).
+
 ### Frontend
 
 - **HTML/CSS**: Uses Bootstrap for styling and responsiveness.
@@ -68,18 +72,18 @@ This Flask-based web application allows users to fetch emails, summarize their c
 ## File Structure
 email-flask-app/<br>
 ├── static/                      # Static assets like CSS and images<br>
-│   ├── icons/                   # Custom SVG icons
-│   │   ├── expand.svg
-│   │   ├── unsubscribe.svg
-│   │   ├── delete.svg
-│   │   └── reply.svg
-│   └── css/                     # Custom CSS files (if any)
-│
-├── templates/                   # HTML templates
-│   └── index.html               # Main page template
-│
-├── email_service.py             # Handles email fetching and deletion via IMAP
-├── summarizer.py                # Summarizes email content using LLM API
+│   ├── icons/                   # Custom SVG icons<br>
+│   │   ├── expand.svg<br>
+│   │   ├── unsubscribe.svg<br>
+│   │   ├── delete.svg<br>
+│   │   └── reply.svg<br>
+│   └── css/                     # Custom CSS files (if any)<br>
+│<br>
+├── templates/                   # HTML templates<br>
+│   └── index.html               # Main page template<br>
+│<br>
+├── email_service.py             # Handles email fetching and deletion via IMAP<br>
+├── summarizer.py                # Summarizes email content using LLM API<br>
 ├── rewriteMessage.py            # Handles AI-powered message rewriting
 ├── emails.js                    # JavaScript logic for email interaction
 ├── app.py                       # Flask backend and routing
