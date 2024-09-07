@@ -66,8 +66,8 @@ This Flask-based web application allows users to fetch emails, summarize their c
     - The rewritten message is pre-filled into the Compose Email form.
 
 ## File Structure
-email-flask-app/
-├── static/                      # Static assets like CSS and images
+email-flask-app/<br>
+├── static/                      # Static assets like CSS and images<br>
 │   ├── icons/                   # Custom SVG icons
 │   │   ├── expand.svg
 │   │   ├── unsubscribe.svg
