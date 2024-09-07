@@ -70,26 +70,80 @@ The code is currently set up using **LM Studio** with **LLama 3.1**, which is in
     - The rewritten message is pre-filled into the Compose Email form.
 
 ## File Structure
-email-flask-app/<br>
-├── static/                      # Static assets like CSS and images<br>
-│   ├── icons/                   # Custom SVG icons<br>
-│   │   ├── expand.svg<br>
-│   │   ├── unsubscribe.svg<br>
-│   │   ├── delete.svg<br>
-│   │   └── reply.svg<br>
-│   └── css/                     # Custom CSS files (if any)<br>
-│<br>
-├── templates/                   # HTML templates<br>
-│   └── index.html               # Main page template<br>
-│<br>
-├── email_service.py             # Handles email fetching and deletion via IMAP<br>
-├── summarizer.py                # Summarizes email content using LLM API<br>
-├── rewriteMessage.py            # Handles AI-powered message rewriting
-├── emails.js                    # JavaScript logic for email interaction
-├── app.py                       # Flask backend and routing
-├── utils.py                     # Utility functions (e.g., text cleaning)
-└── summaries.json               # JSON file storing fetched email summaries
-## Installation
+<table>
+  <tr>
+    <th>File/Directory</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>email-flask-app/</td>
+    <td>Main project directory</td>
+  </tr>
+  <tr>
+    <td>├── static/</td>
+    <td>Static assets like CSS and images</td>
+  </tr>
+  <tr>
+    <td>│&emsp;├── icons/</td>
+    <td>Custom SVG icons</td>
+  </tr>
+  <tr>
+    <td>│&emsp;│&emsp;├── expand.svg</td>
+    <td>SVG icon for expanding content</td>
+  </tr>
+  <tr>
+    <td>│&emsp;│&emsp;├── unsubscribe.svg</td>
+    <td>SVG icon for unsubscribe action</td>
+  </tr>
+  <tr>
+    <td>│&emsp;│&emsp;├── delete.svg</td>
+    <td>SVG icon for deleting emails</td>
+  </tr>
+  <tr>
+    <td>│&emsp;│&emsp;└── reply.svg</td>
+    <td>SVG icon for replying to emails</td>
+  </tr>
+  <tr>
+    <td>│&emsp;└── css/</td>
+    <td>Custom CSS files (if any)</td>
+  </tr>
+  <tr>
+    <td>├── templates/</td>
+    <td>HTML templates</td>
+  </tr>
+  <tr>
+    <td>│&emsp;└── index.html</td>
+    <td>Main page template</td>
+  </tr>
+  <tr>
+    <td>├── email_service.py</td>
+    <td>Handles email fetching and deletion via IMAP</td>
+  </tr>
+  <tr>
+    <td>├── summarizer.py</td>
+    <td>Summarizes email content using LLM API</td>
+  </tr>
+  <tr>
+    <td>├── rewriteMessage.py</td>
+    <td>Handles AI-powered message rewriting</td>
+  </tr>
+  <tr>
+    <td>├── emails.js</td>
+    <td>JavaScript logic for email interaction</td>
+  </tr>
+  <tr>
+    <td>├── app.py</td>
+    <td>Flask backend and routing</td>
+  </tr>
+  <tr>
+    <td>├── utils.py</td>
+    <td>Utility functions (e.g., text cleaning)</td>
+  </tr>
+  <tr>
+    <td>└── summaries.json</td>
+    <td>JSON file storing fetched email summaries</td>
+  </tr>
+</table>
 
 ### Prerequisites
 
