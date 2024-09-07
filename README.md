@@ -1,8 +1,8 @@
 # Email Summarizer and Responder App
 
 This Flask-based web application allows users to fetch emails, summarize their content using a Language Learning Model (LLM), and respond to them directly from the interface. The application also supports additional features such as email deletion, displaying the original email content, and providing the ability to unsubscribe from emails when the option is available.
-<img src="./appimage1.png" alt="Image Description" width="400">
-<img src="./appimage2.png" alt="Image Description" width="400">
+<img src="./appimage1.png" alt="Image Description" width="300">
+<img src="./appimage2.png" alt="Image Description" width="300">
 ## Features
 
 1. **Email Summarization**:
