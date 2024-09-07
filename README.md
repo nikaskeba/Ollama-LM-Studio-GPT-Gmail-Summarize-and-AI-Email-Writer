@@ -134,7 +134,31 @@ email-flask-app/
    - **Show Original Email**: View the full content of the email.
    - **Unsubscribe**: Click on the unsubscribe link (if available).
 4. **Compose Email**: Draft or respond to emails with the Compose Email form.
+## How to Get a Google App Password
 
+To use this application, you'll need to generate an app-specific password for your Google account. This password allows the application to access your email via IMAP while keeping your Google account secure. Follow the steps below:
+
+### Step 1: Enable Two-Factor Authentication (2FA)
+App passwords are only available for accounts with 2FA enabled.
+
+1. Go to [Google Account Security](https://myaccount.google.com/security).
+2. Scroll down to the **Signing in to Google** section.
+3. Ensure **2-Step Verification** is **On**. If it's not, click **2-Step Verification** and follow the instructions to set it up.
+
+### Step 2: Generate an App Password
+Once 2FA is enabled:
+
+1. Go to the [Google App Passwords page](https://myaccount.google.com/apppasswords).
+2. Select **Mail** as the app, and choose **Other** or **Custom** for the device.
+3. Name the custom device something like **Email Summarizer** or **Flask App**.
+4. Click **Generate**.
+5. Copy the 16-character app password that is shown on the screen.
+
+### Step 3: Use the App Password
+1. Add the app password to the `email_credentials.json` file under the `"password"` field for the corresponding email account.
+2. Save the file, and you are ready to use the app.
+
+> **Note**: App passwords are case-sensitive. Ensure that you copy and paste it exactly as shown.
 ## Future Enhancements
 
 - **Multi-account support**: Extend the app to support multiple accounts dynamically.
