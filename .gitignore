@@ -1,3 +1,5 @@
+email_credentials.json
+summaries.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
