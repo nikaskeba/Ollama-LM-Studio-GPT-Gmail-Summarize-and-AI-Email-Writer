@@ -66,9 +66,12 @@ This Flask-based web application allows users to fetch emails, summarize their c
 
 ## File Structure
 email-flask-app/
-│
-├── static/                     # Static assets like CSS and images
+├── static/                      # Static assets like CSS and images
 │   ├── icons/                   # Custom SVG icons
+│   │   ├── expand.svg
+│   │   ├── unsubscribe.svg
+│   │   ├── delete.svg
+│   │   └── reply.svg
 │   └── css/                     # Custom CSS files (if any)
 │
 ├── templates/                   # HTML templates
@@ -81,7 +84,6 @@ email-flask-app/
 ├── app.py                       # Flask backend and routing
 ├── utils.py                     # Utility functions (e.g., text cleaning)
 └── summaries.json               # JSON file storing fetched email summaries
-
 ## Installation
 
 ### Prerequisites
